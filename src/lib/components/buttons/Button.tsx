@@ -1,11 +1,14 @@
 import { Button as MantineButton } from "@mantine/core";
 import { MouseEventHandler } from "react";
 
+// types
 interface ButtonProps {
-  onClick: 
-  children: JSX.Element;
+  disabled?: boolean;
+  fullWidth?: boolean;
+  children: React.ReactNode;
+  onClick: MouseEventHandler;
 }
 
-export const Button = ({ onClick, children }: ButtonProps) => {
-  return <MantineButton onClick={onclick}>{children}</MantineButton>;
+export const Button = ({ onClick, children, disabled, fullWidth = false }: ButtonProps) => {
+  return <MantineButton fullWidth={fullWidth} disabled={disabled} onClick={onClick}>{children}</MantineButton>;
 };
