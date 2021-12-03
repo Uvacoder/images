@@ -1,5 +1,5 @@
 {
-  "name": "pixels",
+  "name": "images",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
