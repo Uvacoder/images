@@ -1,5 +1,4 @@
 import * as Router from "react-router-dom";
-// pages
 import { Home } from "./index/Home";
 import { Photos } from "./photos/Photos";
 import { Favorites } from "./favorites/Favorites";
